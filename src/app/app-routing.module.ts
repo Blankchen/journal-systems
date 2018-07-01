@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { LoginComponent } from '@pages/login/login.component';
+
+import { AuthGuard } from '@core/guards/auth.guard';
+
+const routes: Routes = [
+  { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule', canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages' },
+];
+
+const config: ExtraOptions = {
+  useHash: true,
+};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, config)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
