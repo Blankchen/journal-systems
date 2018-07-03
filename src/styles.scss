@@ -1,3 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+// material
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// font-awesome with _variables.scss
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+// normalize
 @import '~normalize.css/normalize.css';

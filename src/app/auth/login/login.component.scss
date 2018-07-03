@@ -1,0 +1,31 @@
+
+
+div[fxLayoutAlign] {
+  mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+    .full-width-input {
+      width: 100%;
+    }
+  }
+
+  .third-party-btn {
+    width: 200px;
+    text-align: left;
+    color: white;
+    .fa {
+      padding-right: 5px;
+    }
+  }
+  .envelope-bg {
+    background-color: #db4437
+  }
+  .google-bg {
+    background-color: #fff;
+    color: #757575;
+  }
+  .fb-bg {
+    background-color: #3b5998
+  }
+}

@@ -13,10 +13,8 @@ import { SharedModule } from '@shared/shared.module';
 import { environment } from '@env';
 import { AngularFireModule } from 'angularfire2';
 
-import { LoginComponent } from '@pages/login/login.component';
-
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
