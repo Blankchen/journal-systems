@@ -5,13 +5,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@shared/material.module';
 
-
-
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
 const SHARED_MODULES = [
   FlexLayoutModule,
-  MaterialModule
+  MaterialModule,
 ];
 
 const COMPONENTS = [];

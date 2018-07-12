@@ -1,13 +1,8 @@
-
-
 div[fxLayoutAlign] {
   mat-card {
     max-width: 400px;
     margin: 2em auto;
     text-align: center;
-    .full-width-input {
-      width: 100%;
-    }
   }
 
   .third-party-btn {
@@ -18,14 +13,11 @@ div[fxLayoutAlign] {
       padding-right: 5px;
     }
   }
-  .envelope-bg {
-    background-color: #db4437
-  }
   .google-bg {
     background-color: #fff;
     color: #757575;
   }
-  .fb-bg {
+  .facebook-bg {
     background-color: #3b5998
   }
 }
